@@ -1,3 +1,5 @@
+package com.game;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -51,7 +53,7 @@ public class BowlingTests {
     }
 
     @Test
-    void Alternating_200() {
+    void Strikes_Spares() {
         int[] rolls = {6,4, 10, 6,4, 10, 6,4, 10, 6,4, 10, 6,4, 10, 6,4};
         Bowling game = new Bowling(rolls);
         Assertions.assertEquals(200, game.score());

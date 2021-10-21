@@ -1,4 +1,6 @@
-public class Bowling {
+package com.game;
+
+public class Bowling extends Game {
 
     private int[] rolls;
     private int frameStart;
